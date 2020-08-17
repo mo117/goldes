@@ -1,0 +1,204 @@
+<!-- background -->
+<div class="bg">
+    <h2>goldes gym for your health and Your fitness</h2>
+    <h3>For Better Health And A Harmonious Body <br> Book Now With Us</h3>
+    <p>Get ready for your fitness and move forward</p>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <div class="button">
+                    <button><a href="#">about us </a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- carousel -->
+
+<div class="container ">
+    <h2>some of our products</h2>
+    <div class="line">
+        <span></span>
+    </div>
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+        (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <img src="{{ slide.img }}" alt="" width="100%">
+        </div>
+    </ngx-slick-carousel>
+</div>
+
+<!-- some products -->
+
+<h2>We have The Best products</h2>
+<div class="line">
+    <span></span>
+</div>
+<div class="container products">
+    <div class="row text-center">
+        <div class="col-lg-4 col-md-4 col-12">
+            <img src="../../assets//images/45.jpg">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+            <img src="../../assets//images/46.jpg">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+            <img src="../../assets//images/47.jpg">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+            <img src="../../assets//images/48.jpg">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+            <img src="../../assets//images/49.jpg">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+            <img src="../../assets//images/50.jpg">
+        </div>
+
+    </div>
+</div>
+
+
+<!-- whatwedo -->
+<div class="whatwedo">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-6 col-md-6 col-12">
+                <img src="../../assets//images/8.jpg">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <h2>Unique thought.</h2>
+                <p>And we all love what we do.</p>
+                <span>
+                    We have been operating for over 30 years and are Members of The Federation of Master Builders. We
+                    work on projects big and small from small residential extensions to full house. We are so happy with
+                    this theme. Everyday it make our lives better.
+                </span>
+                <ul>
+                    <li>
+                        <span>Aliquam fermentum lorem quis posuere mattis.</span>
+                    </li>
+                    <li>
+                        <span>Sed mollis sapien erat id pellentesque libero.</span>
+                    </li>
+                    <li>
+                        <span>Pellentesque nisl id semper bibendum.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-6 col-md-6 col-12">
+                <h2>We stand next to you step by step </h2>
+                <p>And we all love what we do.</p>
+
+                <span>
+                    We have been operating for over 30 years and are Members of The Federation of Master Builders. We
+                    work on projects big and small from small residential extensions to full house. We are so happy with
+                    this theme. Everyday it make our lives better.
+                </span>
+                <ul>
+                    <li>
+                        <span>Aliquam fermentum lorem quis posuere mattis.</span>
+                    </li>
+                    <li>
+                        <span>Sed mollis sapien erat id pellentesque libero.</span>
+                    </li>
+                    <li>
+                        <span>Pellentesque nisl id semper bibendum.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <img src="../../assets/images/35.jpg">
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- sign up form -->
+
+<div class="container">
+    <h2>sign up for more offers</h2>
+    <div class="line">
+        <span></span>
+    </div>
+    <div class="row">
+        <div class="form col-lg-8 col-md-12 col-sm-12 col-12">
+            <form [formGroup]="Userform" (submit)="signup(Userform)">
+                <div class="row">
+                    <div class="form-group col-md-6 col-12">
+                        <label for="name">your name</label>
+                        <input name="name" formControlName="name" type="text" class="form-control" id="yourname "
+                            placeholder="name">
+                        <div class="alert alert-danger alertemail "
+                            *ngIf="Userform.controls.name.errors?.pattern && Userform.controls.name.touched">only accept
+                            letter
+                        </div>
+                        <div class="alert alert-danger alertemail "
+                            *ngIf="Userform.controls.name.errors?.required && Userform.controls.name.touched">name is
+                            required
+                        </div>
+                    </div>
+
+                    <div class="form-group col-md-6 col-12">
+                        <label for="email">Email</label>
+                        <input name="email" formControlName="email" type="email" class="form-control" id="inputEmail4"
+                            placeholder="email">
+                        <div class="alert alert-danger alertemail"
+                            *ngIf="Userform.controls.email.touched && Userform.controls.email.errors?.required">email is
+                            required</div>
+                        <div class="alert alert-danger alertemail "
+                            *ngIf="Userform.controls.email.touched && Userform.controls.email.errors?.pattern">your
+                            input
+                            dosen't match email format</div>
+
+
+                    </div>
+                    <div class="form-group col-md-6 col-12">
+                        <label for="inputPassword4">Password</label>
+                        <input name="password" formControlName="password" type="password" class="form-control"
+                            id="inputPassword4" placeholder="password">
+                        <div class="alert alert-danger "
+                            *ngIf="Userform.controls.password.touched && Userform.controls.password.errors?.required">
+                            password is required</div>
+                        <div class="alert alert-danger "
+                            *ngIf="Userform.controls.password.touched && Userform.controls.password.errors?.email">
+                            password should be 6+ charchters</div>
+
+                    </div>
+                    <div class="form-group col-md-6 col-12">
+                        <label class="inputpass" for="inputAddress">confirm password</label>
+                        <input name="passwordconfirm" formControlName="passwordconfirm" type="password"
+                            class="form-control" id="inputpasswordconfirm" placeholder="confirm password">
+                        <div class="alert alert-danger alertpass "
+                            *ngIf="Userform.controls.passwordconfirm.invalid && Userform.controls.passwordconfirm.touched">
+                            password confirm is required</div>
+                        <div class="alert alert-danger alertpass"
+                            *ngIf="Userform.controls.passwordconfirm.value !==  Userform.controls.password.value && Userform.controls.passwordconfirm.touched">
+                            password confirm is required</div>
+
+                    </div>
+                    <div class="form-group  col-12">
+                        <label for="inputAddress2">Address </label>
+                        <input name="address" formControlName="address" type="text" class="form-control"
+                            id="inputAddress2" placeholder="Address">
+                        <div class="alert alert-danger alertadd "
+                            *ngIf="Userform.controls.address.invalid && Userform.controls.address.touched">Address is
+                            required</div>
+
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <button type="submit" class="btn btn-primary "
+                        [disabled]="Userform.invalid || Userform.controls.passwordconfirm.value !== Userform.controls.password.value">Sign
+                        up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

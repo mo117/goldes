@@ -1,0 +1,262 @@
+/* background */
+.bg{
+
+    background-image: url(../../assets/images/4.jpg);
+    background-size: cover;
+
+}
+
+
+
+.bg h2 {
+
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: capitalize;
+	font-family: tahoma;
+	padding-top: 200px;
+	text-align: center;
+	color: white;
+	margin-bottom: 12px;
+	z-index: 9999
+}
+
+/*text*/
+.bg h3 {
+
+	font-size: 44px;
+	font-weight: 540;
+	text-transform: capitalize;
+	font-family: tahoma;
+	text-align: center;
+	color: white;
+	line-height: 1.5;
+	margin-bottom: 24px
+}
+
+/*text*/
+.bg  p {
+
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: capitalize;
+	padding-bottom: 40px;
+	font-family: sans-serif;
+	text-align: center;
+	color: white;
+}
+
+.button button{
+ 
+    height: 45px;
+	width: 150px;
+	margin-bottom: 135px;
+	background-color: goldenrod;
+	border: none;
+	outline: none;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: capitalize;
+	font-family: sans-serif;
+	color: white;
+	text-decoration-line: none
+
+}
+
+
+.button button:hover{
+
+	background-color: white;
+	transition: 1s;
+}
+
+.button button a{
+
+    color: black;
+    text-decoration: none;
+}
+
+/* about us */
+.about-us img{
+
+    height: 500px;
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.about-us h2 {
+
+	margin-top: 130px;
+	color: #253048;
+	font-size: 36px;
+	opacity: 1;
+	visibility: visible;
+}
+
+.about-us p {
+
+	font-family: cairo;
+	color: #c1ab84;
+	font-size: 1.3rem
+}
+
+.about-us span {
+
+	color: #686868
+}
+
+.about-us ul {
+
+	list-style: none;
+	margin-top: 50px
+}
+
+.about-us li span {
+
+	line-height: 2;
+	margin-left: 10px
+}
+
+/* ouroffers */
+.our-offers .prices .card{
+ 
+	border: solid 1px goldenrod;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.our-offers .text  p {
+
+	font-size: 2.5rem;
+	font-family: cairo;
+	font-weight: 500;
+	text-transform: capitalize;
+	padding-top: 100px;
+	color: #303030;
+}
+
+.our-offers .text span {
+
+	font-size: 1.1rem;
+	text-transform: capitalize;
+	font-family: sans-serif;
+	color: #606060;
+	line-height: 1.86em;
+
+}
+.our-offers .prices span {
+	color: #888;
+	
+}
+
+.our-offers .prices p{
+	
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-family: ciaro;
+	text-transform: capitalize;
+	margin-top: 30px
+}
+
+.our-offers .prices h2{
+	
+	color: goldenrod;
+	font-family: cairo;
+	
+}
+
+/* contact */
+
+.contact .map iframe {
+	height: 550px;
+	width: 200%;
+	margin-bottom: 50px
+}
+
+@media (max-width:991px){
+	.contact .map iframe{
+
+		width: 100%;
+	}
+	
+
+}
+
+
+.contact p {
+
+	font-size: 2.5rem;
+	font-family: cairo;
+	font-weight: 500;
+	text-transform: capitalize;
+	padding-top: 100px;
+	color: #303030;
+	text-align: center;
+}
+
+.contact .des {
+
+	margin-top: 100px
+}
+
+.contact .des h1 {
+
+	font-size: 2rem;
+	font-family: Alegreya Sans;
+	padding-top: 50px
+}
+
+.contact .des p {
+
+	font-size: 1rem;
+	margin-top: 30px;
+	font-family: Alegreya Sans;
+	color: #686868
+}
+
+.contact .des span {
+	font-family: Alegreya Sans;
+	color: #686868;
+	font-size: 1.3rem
+}
+
+.contact .des ul {
+
+	list-style: none
+}
+
+.contact ul li {
+
+	margin: 10px
+}
+
+.contact ul li i {
+
+	color: gray;
+	margin-right: 10px;
+}
+
+/* line under adress */
+.line{
+
+	height: 5px;
+	width: 150px;
+	background: gray;
+	margin: 0 auto;
+	border-radius: 10px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.line span{
+
+	height: 5px;
+	width: 80px;
+	background: goldenrod;
+	position: absolute;
+	border-radius: 10px;
+	left: 35px;
+
+
+}

@@ -1,0 +1,235 @@
+.bg{
+
+    background-image: url(../../assets/images/44.jpg);
+    background-size: cover;
+
+}
+
+.bg h2 {
+
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: capitalize;
+	font-family: tahoma;
+	padding-top: 200px;
+	text-align: center;
+	color: white;
+	margin-bottom: 12px;
+}
+
+/*text*/
+.bg h3 {
+
+	font-size: 44px;
+	font-weight: 540;
+	text-transform: capitalize;
+	font-family: tahoma;
+	text-align: center;
+	color: white;
+	line-height: 1.5;
+	margin-bottom: 24px
+}
+
+/*text*/
+.bg  p {
+
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: capitalize;
+	padding-bottom: 40px;
+	font-family: sans-serif;
+	text-align: center;
+	color: white;
+}
+
+.button button{
+ 
+    height: 45px;
+	width: 150px;
+	margin-bottom: 155px;
+	background-color: goldenrod;
+	border: none;
+	outline: none;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: capitalize;
+	font-family: sans-serif;
+	color: white;
+	text-decoration-line: none
+
+}
+.button button:hover{
+
+	background-color: white;
+	transition: 1s;
+}
+
+.button button a{
+
+    color: black;
+    text-decoration: none;
+}
+
+/* carousel */
+
+ 
+.carousel{
+ 
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+}
+h2{
+
+	text-align: center;
+	font-size: 30px;
+	text-transform: capitalize;
+	padding-top: 50px;
+	font-weight: bold;
+	font-family: cairo;
+	
+}
+
+
+.carousel img{
+
+	height: 300px;
+	width: 90%;
+	margin: 5px;
+}
+
+/* products */
+
+.products img{
+ 
+	height: 300px;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+
+/* whatwedo */
+.whatwedo img{
+
+    height: 500px;
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+ .whatwedo h2 {
+
+	margin-top: 130px;
+	color: #253048;
+	font-size: 36px;
+	opacity: 1;
+	visibility: visible;
+}
+
+.whatwedo p {
+
+	font-family: cairo;
+	color: #c1ab84;
+	font-size: 1.3rem
+}
+
+.whatwedo span {
+
+	color: #686868
+}
+
+.whatwedo ul {
+
+	list-style: none;
+	margin-top: 50px
+}
+
+.whatwedo li span {
+
+	line-height: 2;
+	margin-left: 10px
+}
+
+/* form */
+
+
+.form{
+
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 50px;
+
+}
+
+
+/* form .btn{
+
+	margin-left: 250px;
+} */
+
+@media (max-width:991px){
+
+	/* form #yourname{
+
+		margin-left: 50px;
+	}
+	form #inputEmail4{
+
+		margin-left: 50px;
+	}
+
+	form .alertemail{
+
+		margin-left: 50px;
+	}
+
+	form #inputPassword4{
+
+		margin-left: 50px;
+	}
+	form #inputpasswordconfirm{
+
+		margin-left: 35px;
+	} */
+	/* form .alertpass {
+	
+		margin-left: 50px;
+	} */
+	
+	/* form .alertadd{
+	
+		margin-left: 50px;
+	
+	}
+	
+	form #inputAddress2{
+		margin-left: 35px;
+	} */
+	
+
+}
+
+/* line under adress */
+
+.line{
+
+	height: 5px;
+	width: 150px;
+	background: gray;
+	margin: 0 auto;
+	border-radius: 10px;
+	position: relative;
+}
+
+.line span{
+
+	height: 5px;
+	width: 80px;
+	background: goldenrod;
+	position: absolute;
+	border-radius: 10px;
+	left: 35px;
+
+
+}

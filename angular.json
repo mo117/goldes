@@ -24,9 +24,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/slick-carousel/slick/slick.scss",
+              "node_modules/slick-carousel/slick/slick-theme.scss",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "goldes"
+    }
+  },
+  "defaultProject": "goldes",
+  "cli": {
+    "analytics": "8f21e492-988e-443c-935b-0adc8de758f8"
+  }
 }

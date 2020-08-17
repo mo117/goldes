@@ -1,0 +1,117 @@
+<!-- background -->
+<div class="bg">
+    <h2>goldes gym for your health and Your fitness</h2>
+    <h3>For Better Health And A Harmonious Body <br> Book Now With Us</h3>
+    <p>Get ready for your fitness and move forward</p>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <div class="button">
+                    <button><a href="#">about us </a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- carousel  -->
+<h2>Some of our coaches</h2>
+<div class="line">
+    <span></span>
+</div>
+<div class="container text-center">
+    <div class="col-lg-12 col-md-12 col-12">
+        <div class="all">
+            <ngb-carousel [interval]="1000" *ngIf="images">
+                <ng-template ngbSlide *ngFor="let image of images">
+                    <div class="picsum-img-wrapper">
+                        <img [src]="image" alt="Random slide">
+                    </div>
+                </ng-template>
+            </ngb-carousel>
+        </div>
+    </div>
+</div>
+
+<!--  hardwares -->
+
+<h2>We Use The Best Hardware</h2>
+<div class="line">
+    <span></span>
+</div>
+<div class="container hardwares">
+    <div class="row text-center">
+        <div class="col-lg-4 col-md-4 col-12">
+            <img src="../../assets//images/21.jpg">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+            <img src="../../assets//images/20.jpg">
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+            <img src="../../assets//images/12.jpg">
+        </div>
+    </div>
+</div>
+
+<!-- whatwedo -->
+
+<div class="whatwedo">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-6 col-md-6 col-12">
+                <img src="../../assets//images/36.jpg">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <h2>Unique thought.</h2>
+                
+                <p>And we all love what we do.</p>
+                <span>
+                    We have been operating for over 30 years and are Members of The Federation of Master Builders. We
+                    work on projects big and small from small residential extensions to full house. We are so happy with
+                    this theme. Everyday it make our lives better.
+                </span>
+                <ul>
+                    <li>
+                        <span>Aliquam fermentum lorem quis posuere mattis.</span>
+                    </li>
+                    <li>
+                        <span>Sed mollis sapien erat id pellentesque libero.</span>
+                    </li>
+                    <li>
+                        <span>Pellentesque nisl id semper bibendum.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-6 col-md-6 col-12">
+                <h2>We stand next to you step by step </h2>
+                <p>And we all love what we do.</p>
+
+                <span>
+                    We have been operating for over 30 years and are Members of The Federation of Master Builders. We
+                    work on projects big and small from small residential extensions to full house. We are so happy with
+                    this theme. Everyday it make our lives better.
+                </span>
+                <ul>
+                    <li>
+                        <span>Aliquam fermentum lorem quis posuere mattis.</span>
+                    </li>
+                    <li>
+                        <span>Sed mollis sapien erat id pellentesque libero.</span>
+                    </li>
+                    <li>
+                        <span>Pellentesque nisl id semper bibendum.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <img src="../../assets/images/33.jpg">
+            </div>
+        </div>
+    </div>
+
+</div>
