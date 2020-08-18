@@ -3,3 +3,19 @@
 body {
     overflow-x: hidden;
 }
+/* @import ""; */
+.rtl {
+    direction: rtl;
+}
+
+.form-ar {
+    text-align: right;
+}
+
+.text-ar {
+    text-align: right;
+}
+
+.text-ar ul {
+    padding: initial;
+}

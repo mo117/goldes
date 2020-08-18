@@ -98,17 +98,75 @@ h2{
 	margin: 5px;
 }
 
-/* products */
 
-.products img{
- 
-	height: 300px;
-    width: 100%;
+/* :: Shop */
+
+.shop-item{
     margin-bottom: 30px;
-    margin-top: 30px;
+}
+.shop-item .item-img{
+    position: relative;
+}
+.shop-item .item-img img{
+    width: 100%;
+}
+.shop-item .item-img .add-to-card{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: bottom;
+        -ms-transform-origin: bottom;
+            transform-origin: bottom;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.shop-item:hover .item-img .add-to-card{
+    -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+}
+.shop-item .item-img .add-to-card a{
 
+	background: white;
+	height: 40px;
+	width: 170px;
+	color: goldenrod;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	
 }
 
+.shop-item .item-text span{
+
+	font-weight: bold;
+}
+.shop img{
+
+	height: 300px;
+	width: 100%;
+}
 /* whatwedo */
 .whatwedo img{
 
@@ -163,53 +221,6 @@ h2{
 }
 
 
-/* form .btn{
-
-	margin-left: 250px;
-} */
-
-@media (max-width:991px){
-
-	/* form #yourname{
-
-		margin-left: 50px;
-	}
-	form #inputEmail4{
-
-		margin-left: 50px;
-	}
-
-	form .alertemail{
-
-		margin-left: 50px;
-	}
-
-	form #inputPassword4{
-
-		margin-left: 50px;
-	}
-	form #inputpasswordconfirm{
-
-		margin-left: 35px;
-	} */
-	/* form .alertpass {
-	
-		margin-left: 50px;
-	} */
-	
-	/* form .alertadd{
-	
-		margin-left: 50px;
-	
-	}
-	
-	form #inputAddress2{
-		margin-left: 35px;
-	} */
-	
-
-}
-
 /* line under adress */
 
 .line{
@@ -220,6 +231,7 @@ h2{
 	margin: 0 auto;
 	border-radius: 10px;
 	position: relative;
+	margin-bottom: 50px;
 }
 
 .line span{

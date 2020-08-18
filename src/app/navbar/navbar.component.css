@@ -36,11 +36,14 @@
  
     color: white !important
 }
-
+#navbarNav {
+    justify-content: flex-end;
+    padding: 0 76px;
+}
 .icon{
 
     font-size: 18px;
-    margin-left: 650px;
+    /* margin-left: 650px; */
     font-weight: 600;
     color: white;
 }

@@ -1,6 +1,14 @@
 {
+    "currentTheme": "ltr",
     "Home": "Home",
     "about": "about",
     "products": "products",
-    "div":"div-en"
+    "address":"Address",
+    "passwordconfirm": "password confirm",
+    "password":"password",
+    "email":"email",
+    "yourname":"your name",
+    "SignUp":"Sign Up",
+    "div":"div-en",
+    "form":"form-en"
 }

@@ -7,7 +7,6 @@
 }
 
 
-
 .bg h2 {
 
 	font-size: 20px;
@@ -119,31 +118,28 @@
 }
 
 /* ouroffers */
+.our-offers{
+
+	background: #f8f9fa;
+}
+
+.our-offers h2{
+
+	text-align: center;
+	font-size: 30px;
+	text-transform: capitalize;
+	padding-top: 50px;
+	font-weight: bold;
+	font-family: cairo;
+
+}
 .our-offers .prices .card{
  
-	border: solid 1px goldenrod;
 	margin-bottom: 10px;
 	margin-top: 10px;
-}
-
-.our-offers .text  p {
-
-	font-size: 2.5rem;
-	font-family: cairo;
-	font-weight: 500;
-	text-transform: capitalize;
-	padding-top: 100px;
-	color: #303030;
-}
-
-.our-offers .text span {
-
-	font-size: 1.1rem;
-	text-transform: capitalize;
-	font-family: sans-serif;
-	color: #606060;
-	line-height: 1.86em;
-
+	border: none;
+	box-shadow: 10px 10px  gray;
+	margin-bottom: 20px;
 }
 .our-offers .prices span {
 	color: #888;
@@ -179,28 +175,23 @@
 
 		width: 100%;
 	}
+}
+
+.contact h2 {
+
+
+		text-align: center;
+		font-size: 30px;
+		text-transform: capitalize;
+		padding-top: 50px;
+		font-weight: bold;
+		font-family: cairo;
 	
 
-}
+	}
 
 
-.contact p {
-
-	font-size: 2.5rem;
-	font-family: cairo;
-	font-weight: 500;
-	text-transform: capitalize;
-	padding-top: 100px;
-	color: #303030;
-	text-align: center;
-}
-
-.contact .des {
-
-	margin-top: 100px
-}
-
-.contact .des h1 {
+.contact .des h3 {
 
 	font-size: 2rem;
 	font-family: Alegreya Sans;
@@ -228,13 +219,13 @@
 
 .contact ul li {
 
-	margin: 10px
+	margin: 10px 0px
 }
 
 .contact ul li i {
 
 	color: gray;
-	margin-right: 10px;
+	margin: 10px;
 }
 
 /* line under adress */
@@ -246,7 +237,7 @@
 	margin: 0 auto;
 	border-radius: 10px;
 	position: relative;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .line span{
@@ -260,3 +251,59 @@
 
 
 }
+
+
+.work-item .work-content {
+	max-width: 100%;
+	margin-top: -6px;
+  }
+
+  .work-item {
+	position: relative;
+	margin-bottom: 30px;
+  }
+  
+  .work-item .work-content {
+	text-align: center;
+	-webkit-box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+	box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+	padding: 25px;
+	max-width: 310px;
+	margin: auto;
+	position: relative;
+	margin-top: -20px;
+	-webkit-transition: 0.6s;
+	transition: 0.6s;
+	background-color: #ffffff;
+  }
+  
+  .work-item .work-content h3 {
+	font-size: 22px;
+	color: #393953;
+	margin: 0 0 8px 0;
+	-webkit-transition: 0.6s;
+	transition: 0.6s;
+  }
+  
+  .work-item .work-content p {
+	margin: 0 0 0 0;
+	-webkit-transition: 0.6s;
+	transition: 0.6s;
+  }
+  
+  .work-item:hover .work-content {
+	max-width: 100%;
+	background-color: goldenrod;
+  }
+  
+  .work-item:hover h3 {
+	color: #ffffff;
+  }
+  
+  .work-item:hover p {
+	color: #ffffff;
+  }
+  .work-image img{
+	  width: 100%;
+	  height: 200px;
+  }

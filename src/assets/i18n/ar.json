@@ -1,6 +1,26 @@
 {
+    "currentTheme": "rtl",
     "Home": "الرئيسيه",
     "about": "عنا",
     "products": "المنتجات",
-    "div":"div-ar"
+    "address":"العنوان",
+    "passwordconfirm": "تأكيد كلمة المرور",
+    "password":"كلمه المرور",
+    "email":"البريد الألكتروني",
+    "yourname":"الأسم",
+    "SignUp":"إنشاء حساب",
+    "Categories": "الأقسام",
+    "Fitness":"لياقه بدنيه",
+    "Skill":"مهارات",
+    "Muscles":"عضلات",
+    "agility":"رشاقه",
+    "Arduous training":"تمارين شاقه",
+    "softness":"ليونه",
+    "Quick Links":"راوبط سريعه",
+    "contact us":"تواصل معنا",
+    "Privacy Policy":"سياسة الخصوصيه",
+    "Contribute":"مشاركة",
+    "div":"div-ar",
+    "form":"form-ar",
+    "text": "text-ar"
 }

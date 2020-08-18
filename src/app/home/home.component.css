@@ -148,18 +148,133 @@ h2{
 
 }
 
-/* hardwares */
+/* whatwedo */
 
-.hardwares img{
-
-    height: 300px;
-    width: 100%;
+.whatwedo .whatwedo-item{
     margin-bottom: 30px;
-    margin-top: 30px;
+    position: relative;
+}
+.whatwedo .whatwedo-item .img-box{
+    overflow: hidden;
+}
+.whatwedo .whatwedo-item:hover .img-box img{
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
+    -webkit-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+}
+.whatwedo .whatwedo-item .text-box{
+    padding: 0 15px;
+}
+.whatwedo .whatwedo-item .text-box{
+    position: absolute;
+    background-color:goldenrod;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: bottom;
+        -ms-transform-origin: bottom;
+            transform-origin: bottom;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.whatwedo .whatwedo-item:hover .text-box{
+    -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+}
+.whatwedo .whatwedo-item .text-box .box{
+    -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+            transform: translateY(-30px);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition-delay: 0.4s;
+         -o-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+    text-align: center;
+}
+.whatwedo .whatwedo-item:hover .text-box .box{
+    -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+.whatwedo .whatwedo-item .text-box h5{
+    color: #222;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: .3px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+.whatwedo .whatwedo-item .text-box span{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: goldenrod;
+    display: inline-block;
+}
+.whatwedo .whatwedo-item .text-box ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+.whatwedo .whatwedo-item .text-box ul li:last-of-type{
+    margin-right: 0;
+}
+.whatwedo .whatwedo-item .text-box ul li a{
+    color: #222;
+    font-size: 16px;
+}
+.whatwedo .whatwedo-item .text-box ul li:hover a{
+    color: goldenrod;
+}
+.whatwedo .whatwedo-item .text-box h5,
+.whatwedo .whatwedo-item .text-box span,
+.whatwedo .whatwedo-item .text-box p,
+.whatwedo .whatwedo-item .text-box ul li a{
+    color: #FFF;
+}
+.whatwedo .whatwedo-item .text-box ul li:hover a{
+    color: #222;
 }
 
-/* whatwedo */
 .whatwedo img{
+ 
+	height: 300px;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 20px;
+
+}
+
+/* ourwork */
+.ourwork img{
 
     height: 500px;
     width: 100%;
@@ -167,7 +282,7 @@ h2{
     margin-bottom: 50px;
 }
 
- .whatwedo h2 {
+.ourwork h2 {
 
 	margin-top: 130px;
 	color: #253048;
@@ -176,25 +291,25 @@ h2{
 	visibility: visible;
 }
 
-.whatwedo p {
+.ourwork p {
 
 	font-family: cairo;
 	color: #c1ab84;
 	font-size: 1.3rem
 }
 
-.whatwedo span {
+.ourwork span {
 
 	color: #686868
 }
 
-.whatwedo ul {
+.ourwork ul {
 
 	list-style: none;
 	margin-top: 50px
 }
 
-.whatwedo li span {
+.ourwork li span {
 
 	line-height: 2;
 	margin-left: 10px
