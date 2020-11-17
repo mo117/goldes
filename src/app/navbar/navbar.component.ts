@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HostListener } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { CookieService } from 'ngx-cookie-service';
+import { trimTrailingNulls } from '@angular/compiler/src/render3/view/util';
 
 
 @Component({
@@ -21,13 +22,13 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (this.cookieService.get('lang') == 'en') {
-      this.IsArbic = true;
-      this.IsEnglish = false;
-    }
-    else {
+    if (this.cookieService.get('lang') == 'ar') {
       this.IsArbic = false;
       this.IsEnglish = true;
+    }
+    else {
+      this.IsArbic = true;
+      this.IsEnglish = false;
     }
   }
 
@@ -54,7 +55,7 @@ export class NavbarComponent implements OnInit {
     this.translateService.use(lang);
     this.translateService.setDefaultLang(lang);
     this.cookieService.set('lang', lang)
-
+    this.navClick()
   }
   navClick() {
     let element = document.querySelector('.navbar-collapse');

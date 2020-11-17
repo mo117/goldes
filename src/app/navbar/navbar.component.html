@@ -16,8 +16,8 @@
           <a class="nav-link " routerLink="/products" (click)="navClick()">{{'products' | translate}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link lang" (click)="changeLang('ar')" *ngIf="IsArbic" (click)="navClick()">Arbic</a>
-          <a class="nav-link lang" (click)="changeLang('en')" *ngIf="IsEnglish" (click)="navClick()">الانجليزيه</a>
+          <a class="nav-link lang" (click)="changeLang('ar')" *ngIf="IsArbic" >Arbic</a>
+          <a class="nav-link lang" (click)="changeLang('en')" *ngIf="IsEnglish" >الانجليزيه</a>
         </li>
       </ul>
     </div>

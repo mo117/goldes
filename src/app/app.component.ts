@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { NgxSpinnerService } from "ngx-spinner";
-
 import { CookieService } from 'ngx-cookie-service';
 
 
@@ -17,7 +16,8 @@ export class AppComponent {
     private cookieService: CookieService,
     private translateService: TranslateService,
     private spinner: NgxSpinnerService
-  ) {
+  ) 
+  {
     translateService.setDefaultLang('en');
     this.loader = true
   }
